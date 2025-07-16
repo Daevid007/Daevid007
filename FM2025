@@ -1,0 +1,1460 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNn/jrvVuGaGKKvJsimu3jH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "6a0182a249604ff2bff0a62ecf62b2e2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DropdownModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DropdownModel",
+            "_options_labels": [
+              "All Teams",
+              "FC Barcelona",
+              "Real Madrid",
+              "Manchester City",
+              "FC Bayern München",
+              "Liverpool FC",
+              "Paris Saint-Germain"
+            ],
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "DropdownView",
+            "description": "Team:",
+            "description_tooltip": null,
+            "disabled": false,
+            "index": 0,
+            "layout": "IPY_MODEL_f190c4dfc8c04bada8bd176b3ceb99eb",
+            "style": "IPY_MODEL_1c3f8dfc24e248dea9b73d242e3bf1a5"
+          }
+        },
+        "f190c4dfc8c04bada8bd176b3ceb99eb": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "1c3f8dfc24e248dea9b73d242e3bf1a5": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "b6b9ecb3bdab4d60b7bcd1c2ec58ca4c": {
+          "model_module": "@jupyter-widgets/output",
+          "model_name": "OutputModel",
+          "model_module_version": "1.0.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/output",
+            "_model_module_version": "1.0.0",
+            "_model_name": "OutputModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/output",
+            "_view_module_version": "1.0.0",
+            "_view_name": "OutputView",
+            "layout": "IPY_MODEL_06b18368a6e24f2baea263707ca8a384",
+            "msg_id": "",
+            "outputs": [
+              {
+                "output_type": "display_data",
+                "data": {
+                  "text/plain": "                 name  overall position                 team\n0        Lionel Messi       95       ST         FC Barcelona\n1   Cristiano Ronaldo       92       ST          Real Madrid\n2     Kevin De Bruyne       91       CM      Manchester City\n3  Robert Lewandowski       90       ST    FC Bayern München\n4     Virgil van Dijk       89       CB         Liverpool FC\n5          Neymar Jr.       88       LW  Paris Saint-Germain",
+                  "text/html": "\n  <div id=\"df-e381b3e2-6f84-4672-bf93-32d50c45b513\" class=\"colab-df-container\">\n    <div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>name</th>\n      <th>overall</th>\n      <th>position</th>\n      <th>team</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>Lionel Messi</td>\n      <td>95</td>\n      <td>ST</td>\n      <td>FC Barcelona</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>Cristiano Ronaldo</td>\n      <td>92</td>\n      <td>ST</td>\n      <td>Real Madrid</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>Kevin De Bruyne</td>\n      <td>91</td>\n      <td>CM</td>\n      <td>Manchester City</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Robert Lewandowski</td>\n      <td>90</td>\n      <td>ST</td>\n      <td>FC Bayern München</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>Virgil van Dijk</td>\n      <td>89</td>\n      <td>CB</td>\n      <td>Liverpool FC</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>Neymar Jr.</td>\n      <td>88</td>\n      <td>LW</td>\n      <td>Paris Saint-Germain</td>\n    </tr>\n  </tbody>\n</table>\n</div>\n    <div class=\"colab-df-buttons\">\n\n  <div class=\"colab-df-container\">\n    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-e381b3e2-6f84-4672-bf93-32d50c45b513')\"\n            title=\"Convert this dataframe to an interactive table.\"\n            style=\"display:none;\">\n\n  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n  </svg>\n    </button>\n\n  <style>\n    .colab-df-container {\n      display:flex;\n      gap: 12px;\n    }\n\n    .colab-df-convert {\n      background-color: #E8F0FE;\n      border: none;\n      border-radius: 50%;\n      cursor: pointer;\n      display: none;\n      fill: #1967D2;\n      height: 32px;\n      padding: 0 0 0 0;\n      width: 32px;\n    }\n\n    .colab-df-convert:hover {\n      background-color: #E2EBFA;\n      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n      fill: #174EA6;\n    }\n\n    .colab-df-buttons div {\n      margin-bottom: 4px;\n    }\n\n    [theme=dark] .colab-df-convert {\n      background-color: #3B4455;\n      fill: #D2E3FC;\n    }\n\n    [theme=dark] .colab-df-convert:hover {\n      background-color: #434B5C;\n      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n      fill: #FFFFFF;\n    }\n  </style>\n\n    <script>\n      const buttonEl =\n        document.querySelector('#df-e381b3e2-6f84-4672-bf93-32d50c45b513 button.colab-df-convert');\n      buttonEl.style.display =\n        google.colab.kernel.accessAllowed ? 'block' : 'none';\n\n      async function convertToInteractive(key) {\n        const element = document.querySelector('#df-e381b3e2-6f84-4672-bf93-32d50c45b513');\n        const dataTable =\n          await google.colab.kernel.invokeFunction('convertToInteractive',\n                                                    [key], {});\n        if (!dataTable) return;\n\n        const docLinkHtml = 'Like what you see? Visit the ' +\n          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n          + ' to learn more about interactive tables.';\n        element.innerHTML = '';\n        dataTable['output_type'] = 'display_data';\n        await google.colab.output.renderOutput(dataTable, element);\n        const docLink = document.createElement('div');\n        docLink.innerHTML = docLinkHtml;\n        element.appendChild(docLink);\n      }\n    </script>\n  </div>\n\n\n    <div id=\"df-faab7e59-d98e-49d0-ad30-01667dca3b92\">\n      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-faab7e59-d98e-49d0-ad30-01667dca3b92')\"\n                title=\"Suggest charts\"\n                style=\"display:none;\">\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n     width=\"24px\">\n    <g>\n        <path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z\"/>\n    </g>\n</svg>\n      </button>\n\n<style>\n  .colab-df-quickchart {\n      --bg-color: #E8F0FE;\n      --fill-color: #1967D2;\n      --hover-bg-color: #E2EBFA;\n      --hover-fill-color: #174EA6;\n      --disabled-fill-color: #AAA;\n      --disabled-bg-color: #DDD;\n  }\n\n  [theme=dark] .colab-df-quickchart {\n      --bg-color: #3B4455;\n      --fill-color: #D2E3FC;\n      --hover-bg-color: #434B5C;\n      --hover-fill-color: #FFFFFF;\n      --disabled-bg-color: #3B4455;\n      --disabled-fill-color: #666;\n  }\n\n  .colab-df-quickchart {\n    background-color: var(--bg-color);\n    border: none;\n    border-radius: 50%;\n    cursor: pointer;\n    display: none;\n    fill: var(--fill-color);\n    height: 32px;\n    padding: 0;\n    width: 32px;\n  }\n\n  .colab-df-quickchart:hover {\n    background-color: var(--hover-bg-color);\n    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n    fill: var(--button-hover-fill-color);\n  }\n\n  .colab-df-quickchart-complete:disabled,\n  .colab-df-quickchart-complete:disabled:hover {\n    background-color: var(--disabled-bg-color);\n    fill: var(--disabled-fill-color);\n    box-shadow: none;\n  }\n\n  .colab-df-spinner {\n    border: 2px solid var(--fill-color);\n    border-color: transparent;\n    border-bottom-color: var(--fill-color);\n    animation:\n      spin 1s steps(1) infinite;\n  }\n\n  @keyframes spin {\n    0% {\n      border-color: transparent;\n      border-bottom-color: var(--fill-color);\n      border-left-color: var(--fill-color);\n    }\n    20% {\n      border-color: transparent;\n      border-left-color: var(--fill-color);\n      border-top-color: var(--fill-color);\n    }\n    30% {\n      border-color: transparent;\n      border-left-color: var(--fill-color);\n      border-top-color: var(--fill-color);\n      border-right-color: var(--fill-color);\n    }\n    40% {\n      border-color: transparent;\n      border-right-color: var(--fill-color);\n      border-top-color: var(--fill-color);\n    }\n    60% {\n      border-color: transparent;\n      border-right-color: var(--fill-color);\n    }\n    80% {\n      border-color: transparent;\n      border-right-color: var(--fill-color);\n      border-bottom-color: var(--fill-color);\n    }\n    90% {\n      border-color: transparent;\n      border-bottom-color: var(--fill-color);\n    }\n  }\n</style>\n\n      <script>\n        async function quickchart(key) {\n          const quickchartButtonEl =\n            document.querySelector('#' + key + ' button');\n          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.\n          quickchartButtonEl.classList.add('colab-df-spinner');\n          try {\n            const charts = await google.colab.kernel.invokeFunction(\n                'suggestCharts', [key], {});\n          } catch (error) {\n            console.error('Error during call to suggestCharts:', error);\n          }\n          quickchartButtonEl.classList.remove('colab-df-spinner');\n          quickchartButtonEl.classList.add('colab-df-quickchart-complete');\n        }\n        (() => {\n          let quickchartButtonEl =\n            document.querySelector('#df-faab7e59-d98e-49d0-ad30-01667dca3b92 button');\n          quickchartButtonEl.style.display =\n            google.colab.kernel.accessAllowed ? 'block' : 'none';\n        })();\n      </script>\n    </div>\n\n  <div id=\"id_bce5b8b9-098d-42a4-8ef7-f2e1cc251b93\">\n    <style>\n      .colab-df-generate {\n        background-color: #E8F0FE;\n        border: none;\n        border-radius: 50%;\n        cursor: pointer;\n        display: none;\n        fill: #1967D2;\n        height: 32px;\n        padding: 0 0 0 0;\n        width: 32px;\n      }\n\n      .colab-df-generate:hover {\n        background-color: #E2EBFA;\n        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n        fill: #174EA6;\n      }\n\n      [theme=dark] .colab-df-generate {\n        background-color: #3B4455;\n        fill: #D2E3FC;\n      }\n\n      [theme=dark] .colab-df-generate:hover {\n        background-color: #434B5C;\n        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n        fill: #FFFFFF;\n      }\n    </style>\n    <button class=\"colab-df-generate\" onclick=\"generateWithVariable('df_players')\"\n            title=\"Generate code using this dataframe.\"\n            style=\"display:none;\">\n\n  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n       width=\"24px\">\n    <path d=\"M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z\"/>\n  </svg>\n    </button>\n    <script>\n      (() => {\n      const buttonEl =\n        document.querySelector('#id_bce5b8b9-098d-42a4-8ef7-f2e1cc251b93 button.colab-df-generate');\n      buttonEl.style.display =\n        google.colab.kernel.accessAllowed ? 'block' : 'none';\n\n      buttonEl.onclick = () => {\n        google.colab.notebook.generateWithVariable('df_players');\n      }\n      })();\n    </script>\n  </div>\n\n    </div>\n  </div>\n",
+                  "application/vnd.google.colaboratory.intrinsic+json": {
+                    "type": "dataframe",
+                    "variable_name": "df_players",
+                    "summary": "{\n  \"name\": \"df_players\",\n  \"rows\": 6,\n  \"fields\": [\n    {\n      \"column\": \"name\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 6,\n        \"samples\": [\n          \"Lionel Messi\",\n          \"Cristiano Ronaldo\",\n          \"Neymar Jr.\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"overall\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 2,\n        \"min\": 88,\n        \"max\": 95,\n        \"num_unique_values\": 6,\n        \"samples\": [\n          95,\n          92,\n          88\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"position\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 4,\n        \"samples\": [\n          \"CM\",\n          \"LW\",\n          \"ST\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"team\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 6,\n        \"samples\": [\n          \"FC Barcelona\",\n          \"Real Madrid\",\n          \"Paris Saint-Germain\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+                  }
+                },
+                "metadata": {}
+              }
+            ]
+          }
+        },
+        "06b18368a6e24f2baea263707ca8a384": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "a8ff122c399a4c80abdc635e096d0691": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ButtonView",
+            "button_style": "",
+            "description": "Spiel simulieren",
+            "disabled": false,
+            "icon": "",
+            "layout": "IPY_MODEL_6c03512a71f34185a11d1db5f0ebf0b2",
+            "style": "IPY_MODEL_812a6390ecd3420285c6308b8aa72597",
+            "tooltip": ""
+          }
+        },
+        "6c03512a71f34185a11d1db5f0ebf0b2": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "812a6390ecd3420285c6308b8aa72597": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "button_color": null,
+            "font_weight": ""
+          }
+        },
+        "5593b9afb0f14f7bb6a52f944268c612": {
+          "model_module": "@jupyter-widgets/output",
+          "model_name": "OutputModel",
+          "model_module_version": "1.0.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/output",
+            "_model_module_version": "1.0.0",
+            "_model_name": "OutputModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/output",
+            "_view_module_version": "1.0.0",
+            "_view_name": "OutputView",
+            "layout": "IPY_MODEL_b8192be52ac04650b82b01c8ee3d1b45",
+            "msg_id": "",
+            "outputs": [
+              {
+                "output_type": "stream",
+                "name": "stdout",
+                "text": [
+                  "Spiel zwischen FC Bayern München und Borussia Dortmund:\n",
+                  "Ergebnis: FC Bayern München 2 - 0 Borussia Dortmund\n",
+                  "FC Bayern München hat gewonnen!\n"
+                ]
+              }
+            ]
+          }
+        },
+        "b8192be52ac04650b82b01c8ee3d1b45": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "6ec2cea4601240748c4ef0929448e35c": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "IntSliderModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "IntSliderModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "IntSliderView",
+            "continuous_update": true,
+            "description": "Min Overall:",
+            "description_tooltip": null,
+            "disabled": false,
+            "layout": "IPY_MODEL_d85900eee3844b419b63a314a2ac8a47",
+            "max": 100,
+            "min": 50,
+            "orientation": "horizontal",
+            "readout": true,
+            "readout_format": "d",
+            "step": 1,
+            "style": "IPY_MODEL_d2dacb01f6db49038320673913afa669",
+            "value": 70
+          }
+        },
+        "d85900eee3844b419b63a314a2ac8a47": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "d2dacb01f6db49038320673913afa669": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "SliderStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "SliderStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": "",
+            "handle_color": null
+          }
+        },
+        "52d59b6c271d4c4d96b57eacc5def8ff": {
+          "model_module": "@jupyter-widgets/output",
+          "model_name": "OutputModel",
+          "model_module_version": "1.0.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/output",
+            "_model_module_version": "1.0.0",
+            "_model_name": "OutputModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/output",
+            "_view_module_version": "1.0.0",
+            "_view_name": "OutputView",
+            "layout": "IPY_MODEL_9641a07133c04b44ad1cbdd637742f49",
+            "msg_id": "",
+            "outputs": [
+              {
+                "output_type": "display_data",
+                "data": {
+                  "text/plain": "<Figure size 1000x600 with 1 Axes>",
+                  "image/png": "iVBORw0KGgoAAAANSUhEUgAAA04AAAIjCAYAAAA0vUuxAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjAsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvlHJYcgAAAAlwSFlzAAAPYQAAD2EBqD+naQAAWyZJREFUeJzt3Xd4VGX+/vF7ZlIJCT0EQpUOIi2C6CK4BoIiRVxAQJoKNlYwqygqILKIqGBwQVlBARUQRAVsILBEqrQQRUSK9JLQhEBC2sz5/cEv82VM4GTIkBmT9+u65tI59TPnOc9h7jklFsMwDAEAAAAArsrq7QIAAAAAwNcRnAAAAADABMEJAAAAAEwQnAAAAADABMEJAAAAAEwQnAAAAADABMEJAAAAAEwQnAAAAADABMEJAAAAAEwQnAAUKbNnz5bFYtHBgwedw9q1a6d27dp5rSZPio+Pl8ViUXx8vHPYwIEDVaNGDa/VVFAFqb8otW1heeWVV2SxWFyG1ahRQwMHDvROQQDwF0FwAnBVXbp0UYkSJXThwoWrTtO3b18FBATozJkzBV7f8ePH9corrygxMbHAy8KN89VXX6lt27YKDw9XiRIldNNNN6lnz55atmyZt0srFF9//bU6duyocuXKKSgoSHXr1tWzzz7rkT7g6ywWi8srJCREDRs21L///W+lpaV5uzy3zZs3T3Fxcd4uA8BfBMEJwFX17dtXly5d0pdffpnn+LS0NC1ZssT5JbKgjh8/rrFjxxYoOPXr10+XLl1S9erVC1wPcnvrrbfUpUsXWSwWjRw5Um+//bYeeOAB7d27V59++ul1LXPGjBnavXu3hyu9MZ599ll17txZSUlJev755zV16lRFR0dr6tSpatKkyV/mcxRE+/bt9fHHH+vjjz/WpEmT1KxZM40aNUoDBgzwdmluIzgBcIeftwsA4Lu6dOmi0NBQzZs3T/379881fsmSJUpNTVXfvn0LtJ7s7Gw5HI4CLSOHzWaTzWbzyLKKI8MwlJ6eruDg4FzjsrOzNW7cOLVv317ff/99rvEnT568rnX6+/tf13ye5nA4lJmZqaCgoDzHz58/X5MmTVKvXr00d+5cl/1s4MCBuuuuu9SjRw8lJCTIz6/w/nlNTU1VSEhIoa2vbt26euihh5zvH3/8cWVmZuqLL75Qenr6VbefLynsbQagaOCME4CrCg4OVvfu3bVq1ao8vxTPmzdPoaGh6tKliyTp3LlzGj58uKpWrarAwEDVrl1bEydOdAlFBw8elMVi0VtvvaW4uDjVqlVLgYGBevfdd3XrrbdKkgYNGuS8FGj27NnOeTdt2qSOHTuqVKlSKlGihNq2bav169e71JTXPU5/drVp8rp/qF27drr55pv166+/6q677lKJEiUUGRmpN954I9dyDx06pC5duigkJETh4eF65plntHz58lzLzMuhQ4f05JNPql69egoODla5cuXUo0ePa36Oa3E4HIqLi1OjRo0UFBSkihUr6rHHHtMff/zhMl2NGjV03333afny5YqKilJwcLD++9//5rnM06dPKyUlRXfccUee48PDw53/n7MtFyxYoBdffFEREREKCQlRly5ddOTIEZf58rrHKb/15yUjI0NjxoxR7dq1FRgYqKpVq2rEiBHKyMhwmc5isWjo0KGaO3euGjVqpMDAwGtebjh27FiVKVNG77//fq5w3rJlSz3//PPasWOHFi1aJEkaOnSoSpYsmeclbL1791ZERITsdrtz2Hfffac2bdooJCREoaGh6tSpk3bu3JlrW5UsWVK///677r33XoWGhjp/uFi7dq169OihatWqOT/3M888o0uXLplus4KKiIiQxWLJFRjN+uzPP/8si8WipUuXOodt27ZNFotFzZs3d1nWPffco1atWrkMK8g2a9eunb755hsdOnTIebzJ2Q994RiRn+Ndzv1q+/bt08CBA1W6dGmVKlVKgwYN+kteOgn4Os44Abimvn37as6cOVq4cKGGDh3qHH727FktX75cvXv3VnBwsNLS0tS2bVsdO3ZMjz32mKpVq6YNGzZo5MiROnHiRK7LYWbNmqX09HQNGTJEgYGBuv/++3XhwgWNHj1aQ4YMUZs2bSRJt99+uyTpf//7n+655x61aNFCY8aMkdVq1axZs/T3v/9da9euVcuWLW/YNvjjjz/UsWNHde/eXT179tSiRYv0/PPPq3HjxrrnnnskXf4F++9//7tOnDihYcOGKSIiQvPmzdPq1avztY4tW7Zow4YNevDBB1WlShUdPHhQ7733ntq1a6dff/1VJUqUcKvmxx57TLNnz9agQYP09NNP68CBA5o6daq2b9+u9evXu5zl2b17t3r37q3HHntMgwcPVr169fJcZnh4uIKDg/XVV1/pn//8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Tx07dizP7X7p0iXnfTRXc8cddyg6Otr5yglO0uV9/48//tDjjz+eq122bdumiRMn6uabb9YDDzzgMq5Xr17KyMjQnDlztGzZMvXs2dNlfExMjMLCwvTaa68pKysrV0352b9zzjhcuQ8ZhqEpU6aYzvtnQUFBLtsgOjra9DLYr776StL/BSx3+2ybNm20adMmrV692hmcypcvrwYNGjifDJczXPLMNpMuH3PyuozRm8cITx/vAHgOZ5wA5EvNmjV1++23a8mSJZKUKzg999xzWrp0qe677z4NHDhQLVq0UGpqqvPv2hw8eFDly5e/5jpq1aql0qVLa/r06QoNDVVISIhatWqlmjVraubMmbrnnnvUqFEjDRo0SJGRkTp27JhWr16tsLAw5xe3/GjUqJFuu+02jRw5UmfPnlXZsmX16aef5ivcXc1jjz2mqVOnqnfv3ho2bJgqVaqkuXPnOu/3MTv7cd999+njjz9WqVKl1LBhQ23cuFErV65UuXLl3K6lbdu2euyxxzRhwgQlJiaqQ4cO8vf31969e/XZZ59pypQp+sc//uH2ctPS0nT77bfrtttuU8eOHVW1alWdO3dOixcv1tq1a9WtWzc1a9bMZZ6yZcvqb3/7mwYNGqTk5GTFxcWpdu3a13xoRkHq79evnxYuXKjHH39cq1ev1h133CG73a7ffvtNCxcudP69quvRt29fbdmyRVOmTNGvv/6qvn37qkyZMkpISNCHH36ocuXKadGiRbkeld68eXPVrl1bL730kjIyMlwu05Mun1l477331K9fPzVv3lwPPvigKlSooMOHD+ubb77RHXfcoalTp16ztvr166tWrVp69tlndezYMYWFhenzzz/P19+9cteePXv0ySefSLq8T/z444+aM2eOateurX79+kmSrFarW322TZs2Gj9+vI4cOeISkO68807997//VY0aNVzuUfLENpMuh5QFCxYoNjZWt956q0qWLKnOnTt79Rjh7rYDUIi88iw/AH9J06ZNMyS5PDr4ShcuXDBGjhxp1K5d2wgICDDKly9v3H777cZbb71lZGZmGobxf48jf/PNN/NcxpIlS4yGDRsafn5+uR5Nvn37dqN79+5GuXLljMDAQKN69epGz549jVWrVjmnyc/jyA3DMH7//XcjOjraCAwMNCpWrGi8+OKLxooVK/J81HCjRo1y1fnnR2gbhmHs37/f6NSpkxEcHGxUqFDB+Ne//mV8/vnnhiTjxx9/zPPz5vjjjz+MQYMGGeXLlzdKlixpxMTEGL/99luux0Tn53HkOd5//32jRYsWRnBwsBEaGmo0btzYGDFihHH8+HHnNNWrVzc6dep0zdpyZGVlGTNmzDC6detmVK9e3QgMDDRKlChhNGvWzHjzzTeNjIyMXHXOnz/fGDlypBEeHm4EBwcbnTp1cnk0dkHrz6ttMzMzjYkTJxqNGjUyAgMDjTJlyhgtWrQwxo4da5w/f945nSTjqaeeytdnv9LixYuN9u3bG2XKlDECAwON2rVrG//617+MU6dOXXWel156yZBk1K5d+6rTrF692oiJiTFKlSplBAUFGbVq1TIGDhxobN261TnNgAEDjJCQkDzn//XXX43o6GijZMmSRvny5Y3BgwcbP/30U65+5MnHkdtsNqNKlSrGkCFDjOTk5FzT56fPGoZhpKSkGDabzQgNDTWys7Odwz/55BNDktGvX7886ynoNrt48aLRp08fo3Tp0oYkl/3Q28eI/Gy7nLb88753tcepAygYi2Fw5yAA3ChxcXF65plndPToUUVGRnq7nEITHx+vu+66S5999tl1nd0CiovieowA/oq4xwkAPOTKhwpIl+9f+O9//6s6derwhQgAxwjgL457nADAQ7p3765q1aqpadOmOn/+vD755BP99ttvV32sNoDihWME8NdGcAIAD4mJidHMmTM1d+5c2e12NWzYUJ9++mmuhwEAKJ44RgB/bdzjBAAAAAAmuMcJAAAAAEwQnAAAAADARLG7x8nhcOj48eMKDQ01/YOUAAAAAIouwzB04cIFVa5cWVbrtc8pFbvgdPz4cVWtWtXbZQAAAADwEUeOHFGVKlWuOU2xC06hoaGSLm+csLAwL1cjZWVl6fvvv1eHDh3k7+/v7XKKPdrD99AmvoX28D20ie+hTXwL7eF7fKlNUlJSVLVqVWdGuJZiF5xyLs8LCwvzmeBUokQJhYWFeX3HAe3hi2gT30J7+B7axPfQJr6F9vA9vtgm+bmFh4dDAAAAAIAJghMAAAAAmCA4AQAAAIAJghMAAAAAmCA4AQAAAIAJghMAAAAAmCA4AQAAAIAJghMAAAAAmCA4AQAAAIAJghMAAAAAmCA4AQAAAIAJghMAAAAAmCA4AQAAAIAJghMAAAAAmCA4AQAAAIAJrwanNWvWqHPnzqpcubIsFosWL15sOk98fLyaN2+uwMBA1a5dW7Nnz77hdQIAAAAo3rwanFJTU9WkSRNNmzYtX9MfOHBAnTp10l133aXExEQNHz5cjz76qJYvX36DKwUAAABQnPl5c+X33HOP7rnnnnxPP336dNWsWVOTJk2SJDVo0EDr1q3T22+/rZiYmBtVJgAAAIBizqvByV0bN25UdHS0y7CYmBgNHz78qvNkZGQoIyPD+T4lJUWSlJ2drezs7BtSpzvsdrskafv27bJaueXsSpmZmQoICCjUdTocDkm+3R7e2C7e5E6blC9fXlWqVCmMsv5Sjh49qtOnT3tkWX+FPuKOotCfbkSb0JcKJuffdrvdLovF4uVq4O328OQxuKjIOW75Qh9xJw/8pYJTUlKSKlas6DKsYsWKSklJ0aVLlxQcHJxrngkTJmjs2LG5hm/dulUhISE3rNb8unTpkiRp5cqVzp0I3mO1WtWoUSPaw4e40yZWq1WtWrVSUFBQIVXn+9LT07Vp0yaP7c/0Ed9zI9qEvlQwOe2wZcuWIvEDw1+dN9vD08fgoiLnuLVu3bo8v78XptTU1HxP+5cKTtdj5MiRio2Ndb5PSUlR1apVFRUVpbCwMC9WdllCQoJSU1M1Y/sF2cMqebscn5F+IEHn189XuXuGya9c4f3qGeRn0ZuNpNmHQpWebRTaevPLW9vFm/LbJtlnjurMd1O0fv16NW3atPAK9HGJiYkaO3asx/YZX+8j7igq/cnTbUJfKrjs7GwtX75ct956q/z8ivxXLZ/nzfbw9DG4qLClnFBcIyksLEzNmzf3ai05V6Plx1+qN0dERCg5OdllWHJyssLCwq6aVgMDAxUYGJhruJ+fn08czJy/fJSqJGv5Wt4txoc4Th5WZmamjNKRslYovO1isRmS7LKUrymr3fcur/DWdvGm/LaJYTeUmZkpq9XqE33bV1itVo/uM77eR9xRVPqTp9uEvlRwhnE5wNpsNrahD/Bme3j6GFxk/P9DlS8cZ9xZ/1/q/HHr1q21atUql2ErVqxQ69atvVQRAAAAgOLAq8Hp4sWLSkxMVGJioqTLjxtPTEzU4cOHJV2+zK5///7O6R9//HHt379fI0aM0G+//aZ3331XCxcu1DPPPOON8gEAAAAUE14NTlu3blWzZs3UrFkzSVJsbKyaNWum0aNHS5JOnDjhDFGSVLNmTX3zzTdasWKFmjRpokmTJmnmzJk8ihwAAADADeXViwrbtWvnvO40L7Nnz85znu3bt9/AqgAAAADA1V/qHicAAAAA8AaCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmCEwAAAACYIDgBAAAAgAmvB6dp06apRo0aCgoKUqtWrbR58+ZrTh8XF6d69eopODhYVatW1TPPPKP09PRCqhYAAABAceTV4LRgwQLFxsZqzJgxSkhIUJMmTRQTE6OTJ0/mOf28efP0wgsvaMyYMdq1a5c++OADLViwQC+++GIhVw4AAACgOPFqcJo8ebIGDx6sQYMGqWHDhpo+fbpKlCihDz/8MM/pN2zYoDvuuEN9+vRRjRo11KFDB/Xu3dv0LBUAAAAAFISft1acmZmpbdu2aeTIkc5hVqtV0dHR2rhxY57z3H777frkk0+0efNmtWzZUvv379e3336rfv36XXU9GRkZysjIcL5PSUmRJGVnZys7O9tDn+b6ORwOSZK/zSLDani5Gt8RYLMqICBA/jaL/Atxu+Ssy99qyOGDzeGt7eJN+W0Th82igIAAORwOn+jbvsLhcHh0n/H1PuKOotKfPN0m9KWCs9vtzv9aLBYvVwNvtoenj8FFhcV2uR184TjjzvothmF4pRWPHz+uyMhIbdiwQa1bt3YOHzFihH744Qdt2rQpz/neeecdPfvsszIMQ9nZ2Xr88cf13nvvXXU9r7zyisaOHZtr+PLlyxUSElLwD1JAKSkpyszM1N7T6ZJ/sLfL8Rn21D+UdeaIAiJqyxpQotDWa7UYqhUm/Z4iOQzf+8fOW9vFm/LbJo7MNGUm7VNUVJRCQ0MLsULfduHCBW3dutVj+4yv9xF3FJX+5Ok2oS8VnMPh0NmzZ1W2bFlZrV6/nbzY82Z7ePoYXGRkXVKd8kEKCAhQWFiYV0tJTU1VTEyMzp8/b1qL1844XY/4+Hi99tprevfdd9WqVSvt27dPw4YN07hx4zRq1Kg85xk5cqRiY2Od71NSUlS1alVFRUV5vaEkKSEhQSdOnND7m0/KKFfT2+X4jNRfd+rMd1NU8aE3FVjxpkJbb6DN0Pgohz7cY1WG3fe+FHpru3hTftskI/mkkj8Zp/Xr16tp06aFV6CPS0xM1Lhx4zy2z/h6H3FHUelPnm4T+lLBZWdna/ny5br11lvl5/eX+qpVJHmzPTx9DC4qLGdO6s17q6lcuXJq3ry5V2vJuRotP7zWm8uXLy+bzabk5GSX4cnJyYqIiMhznlGjRqlfv3569NFHJUmNGzdWamqqhgwZopdeeinPXxECAwMVGBiYa7ifn59PHMxyas6yGzIcf+0vIZ6UaXcoMzNTWXZD1kLcLtb/v6osh0VZPtge3tou3pTfNsmyG8rMzJTVavWJvu0rrFarR/cZX+8j7igq/cnTbUJfKrici3lsNhvb0Ad4sz08fQwuKiz2y23iC8cZd9bvtfPHAQEBatGihVatWuUc5nA4tGrVKpdL966UlpaWKxzZbDZJ/9cpAAAAAMDTvBrxYmNjNWDAAEVFRally5aKi4tTamqqBg0aJEnq37+/IiMjNWHCBElS586dNXnyZDVr1sx5qd6oUaPUuXNnZ4ACAAAAAE/zanDq1auXTp06pdGjRyspKUlNmzbVsmXLVLFiRUnS4cOHXc4wvfzyy7JYLHr55Zd17NgxVahQQZ07d9b48eO99REAAAAAFANev/B26NChGjp0aJ7j4uPjXd77+flpzJgxGjNmTCFUBgAAAACX8YxMAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAEwQnAAAAADBBcAIAAAAAE24Fp6ysLNWqVUu7du26UfUAAAAAgM9xKzj5+/srPT39RtUCAAAAAD7J7Uv1nnrqKU2cOFHZ2dk3oh4AAAAA8Dl+7s6wZcsWrVq1St9//70aN26skJAQl/FffPGFx4oDAAAAAF/gdnAqXbq0HnjggRtRCwAAAAD4JLeD06xZs25EHQAAAADgs67rceTZ2dlauXKl/vvf/+rChQuSpOPHj+vixYseLQ4AAAAAfIHbZ5wOHTqkjh076vDhw8rIyFD79u0VGhqqiRMnKiMjQ9OnT78RdQIAAACA17h9xmnYsGGKiorSH3/8oeDgYOfw+++/X6tWrfJocQAAAADgC9w+47R27Vpt2LBBAQEBLsNr1KihY8eOeawwAAAAAPAVbp9xcjgcstvtuYYfPXpUoaGhHikKAAAAAHyJ28GpQ4cOiouLc763WCy6ePGixowZo3vvvdeTtQEAAACAT3D7Ur1JkyYpJiZGDRs2VHp6uvr06aO9e/eqfPnymj9//o2oEQAAAAC8yu3gVKVKFf3000/69NNP9fPPP+vixYt65JFH1LdvX5eHRQAAAABAUeF2cJIkPz8/PfTQQ56uBQAAAAB8Ur6C09KlS/O9wC5dulx3MQAAAADgi/IVnLp165avhVksljyfuAcAAAAAf2X5Ck4Oh+NG1wEAAAAAPsvtx5FfKT093VN1AAAAAIDPcjs42e12jRs3TpGRkSpZsqT2798vSRo1apQ++OADjxcIAAAAAN7mdnAaP368Zs+erTfeeEMBAQHO4TfffLNmzpzp0eIAAAAAwBe4HZw++ugjvf/+++rbt69sNptzeJMmTfTbb795tDgAAAAA8AVuB6djx46pdu3auYY7HA5lZWV5pCgAAAAA8CVuB6eGDRtq7dq1uYYvWrRIzZo180hRAAAAAOBL8vU48iuNHj1aAwYM0LFjx+RwOPTFF19o9+7d+uijj/T111/fiBoBAAAAwKvcPuPUtWtXffXVV1q5cqVCQkI0evRo7dq1S1999ZXat2/vdgHTpk1TjRo1FBQUpFatWmnz5s3XnP7cuXN66qmnVKlSJQUGBqpu3br69ttv3V4vAAAAAOSX22ecJKlNmzZasWJFgVe+YMECxcbGavr06WrVqpXi4uIUExOj3bt3Kzw8PNf0mZmZat++vcLDw7Vo0SJFRkbq0KFDKl26dIFrAQAAAICrua7g5CmTJ0/W4MGDNWjQIEnS9OnT9c033+jDDz/UCy+8kGv6Dz/8UGfPntWGDRvk7+8vSapRo0ZhlgwAAACgGMpXcCpbtqz27Nmj8uXLq0yZMrJYLFed9uzZs/lacWZmprZt26aRI0c6h1mtVkVHR2vjxo15zrN06VK1bt1aTz31lJYsWaIKFSqoT58+ev75510ejX6ljIwMZWRkON+npKRIkrKzs5WdnZ2vWm8kh8MhSfK3WWRYDS9X4zsCbFYFBATI32aRfyFul5x1+VsNOXywOby1Xbwpv23isFkUEBAgh8PhE33bVzgcDo/uM77eR9xRVPqTp9uEvlRwdrvd+d9rfWdC4fBme3j6GFxUWGyX28EXjjPurD9fwentt99WaGioJCkuLu66ivqz06dPy263q2LFii7DK1aseNW/B7V//37973//U9++ffXtt99q3759evLJJ5WVlaUxY8bkOc+ECRM0duzYXMO3bt2qkJCQgn+QAsoJckNahkv+Di9X4zvsVRspK2qUAiLCZQ0ovO1itVw+qD1c1yGH4Xv/2Hlru3hTftvEcVO4MmuO0unTp7Vp06bCKs/nXbhwQaNGeW6f8fU+4o6i0p883Sb0pYLL+VF0y5Ytslrdvp0cHubN9vD0MbjIyLp8S86ZM2e8fpxJTU3N97QWwzC8En+PHz+uyMhIbdiwQa1bt3YOHzFihH744Yc8N2LdunWVnp6uAwcOOM8wTZ48WW+++aZOnDiR53ryOuNUtWpVnTlzRmFhYR7+VO5LSEjQiRMn9Ny3h2WUq+ntcnxG6q9rdOa7Kar40JsKrHhToa030GZofJRDL221KsPue18KvbVdvCm/bZKRvF/Jnzyn9evXq2nTpoVXoI9LTEzUHXfc4bF9xtf7iDuKSn/ydJvQlwouOztby5cvV0xMjPz8vHpXBOTd9vD0MbiosJw5oDfvraZKlSqpefPmXq0lJSVF5cqV0/nz502zwXXtPXa7XV9++aV27dol6fLfduratatbO2P58uVls9mUnJzsMjw5OVkRERF5zlOpUiX5+/u7XJbXoEEDJSUlKTMzUwEBAbnmCQwMVGBgYK7hfn5+PnEwy/nlI8tuyHD8tb+EeFKm3aHMzExl2Q1ZC3G7WP//qrIcFmX5YHt4a7t4U37bJMtuKDMzU1ar1Sf6tq+wWq0e3Wd8vY+4o6j0J0+3CX2p4HJ+k7bZbGxDH+DN9vD0MbiosNgvt4kvHGfcWb/b5yt37typunXrasCAAfryyy/15ZdfasCAAapTp45++eWXfC8nICBALVq00KpVq5zDHA6HVq1a5XIG6kp33HGH9u3b5zzlKkl79uxRpUqV8gxNAAAAAOAJbgenRx99VI0aNdLRo0eVkJCghIQEHTlyRLfccouGDBni1rJiY2M1Y8YMzZkzR7t27dITTzyh1NRU51P2+vfv7/LwiCeeeEJnz57VsGHDtGfPHn3zzTd67bXX9NRTT7n7MQAAAAAg39w+N5aYmKitW7eqTJkyzmFlypTR+PHjdeutt7q1rF69eunUqVMaPXq0kpKS1LRpUy1btsz5wIjDhw+73MRXtWpVLV++XM8884xuueUWRUZGatiwYXr++efd/RgAAAAAkG9uB6e6desqOTlZjRo1chl+8uRJ1a5d2+0Chg4dqqFDh+Y5Lj4+Ptew1q1b68cff3R7PQAAAABwvdy+VG/ChAl6+umntWjRIh09elRHjx7VokWLNHz4cE2cOFEpKSnOFwAAAAAUBW6fcbrvvvskST179nT+EbGcp5V07tzZ+d5isTj/4BgAAAAA/JW5HZxWr159I+oAAAAAAJ/ldnBq27btjagDAAAAAHxWvu9xOn36tA4dOuQybOfOnRo0aJB69uypefPmebw4AAAAAPAF+Q5O//znP/XOO+843588eVJt2rTRli1blJGRoYEDB+rjjz++IUUCAAAAgDflOzj9+OOP6tKli/P9Rx99pLJlyyoxMVFLlizRa6+9pmnTpt2QIgEAAADAm/IdnJKSklSjRg3n+//973/q3r27/Pwu3ybVpUsX7d271+MFAgAAAIC35Ts4hYWF6dy5c873mzdvVqtWrZzvLRaLMjIyPFocAAAAAPiCfAen2267Te+8844cDocWLVqkCxcu6O9//7tz/J49e1S1atUbUiQAAAAAeFO+H0c+btw43X333frkk0+UnZ2tF198UWXKlHGO//TTT3lUOQAAAIAiKd/B6ZZbbtGuXbu0fv16RUREuFymJ0kPPvigGjZs6PECAQAAAMDb3PoDuOXLl1fXrl3zHNepUyePFAQAAAAAvibf9zgBAAAAQHFFcAIAAAAAEwQnAAAAADDhVnDKzs7WRx99pOTk5BtVDwAAAAD4HLeCk5+fnx5//HGlp6ffqHoAAAAAwOe4faley5YtlZiYeANKAQAAAADf5NbjyCXpySefVGxsrI4cOaIWLVooJCTEZfwtt9ziseIAAAAAwBe4HZwefPBBSdLTTz/tHGaxWGQYhiwWi+x2u+eqAwAAAAAf4HZwOnDgwI2oAwAAAAB8ltvBqXr16jeiDgAAAADwWdf1d5w+/vhj3XHHHapcubIOHTokSYqLi9OSJUs8WhwAAAAA+AK3g9N7772n2NhY3XvvvTp37pzznqbSpUsrLi7O0/UBAAAAgNe5HZz+85//aMaMGXrppZdks9mcw6OiorRjxw6PFgcAAAAAvsDt4HTgwAE1a9Ys1/DAwEClpqZ6pCgAAAAA8CVuB6eaNWvm+Qdwly1bpgYNGniiJgAAAADwKW4/VS82NlZPPfWU0tPTZRiGNm/erPnz52vChAmaOXPmjagRAAAAALzK7eD06KOPKjg4WC+//LLS0tLUp08fVa5cWVOmTHH+cVwAAAAAKErcDk6S1LdvX/Xt21dpaWm6ePGiwsPDPV0XAAAAAPiM6wpOOUqUKKESJUp4qhYAAAAA8En5Ck7NmjWTxWLJ1wITEhIKVBAAAAAA+Jp8Badu3bo5/z89PV3vvvuuGjZsqNatW0uSfvzxR+3cuVNPPvnkDSkSAAAAALwpX8FpzJgxzv9/9NFH9fTTT2vcuHG5pjly5IhnqwMAAAAAH+D233H67LPP1L9//1zDH3roIX3++eceKQoAAAAAfInbwSk4OFjr16/PNXz9+vUKCgrySFEAAAAA4Evcfqre8OHD9cQTTyghIUEtW7aUJG3atEkffvihRo0a5fECAQAAAMDb3A5OL7zwgm666SZNmTJFn3zyiSSpQYMGmjVrlnr27OnxAgEAAADA267r7zj17NmTkAQAAACg2HD7HicAAAAAKG4ITgAAAABgguAEAAAAACYITgAAAABgguAEAAAAACby9VS92NjYfC9w8uTJ110MAAAAAPiifAWn7du352thFoulQMUAAAAAgC/KV3BavXr1ja4DAAAAAHwW9zgBAAAAgIl8nXG6Umpqql5//XWtWrVKJ0+elMPhcBm/f/9+jxUHAAAAAL7A7eD06KOP6ocfflC/fv1UqVIl7msCAAAAUOS5HZy+++47ffPNN7rjjjtuRD0AAAAA4HPcvsepTJkyKlu27I2oBQAAAAB8ktvBady4cRo9erTS0tJuRD0AAAAA4HPydales2bNXO5l2rdvnypWrKgaNWrI39/fZdqEhATPVggAAAAAXpav4NStW7cbXAYAAAAA+K58BacxY8bc6DoAAAAAwGfxB3ABAAAAwITbjyO32+16++23tXDhQh0+fFiZmZku48+ePeux4gAAAADAF7h9xmns2LGaPHmyevXqpfPnzys2Nlbdu3eX1WrVK6+8cgNKBAAAAADvcjs4zZ07VzNmzNC//vUv+fn5qXfv3po5c6ZGjx6tH3/88UbUCAAAAABe5XZwSkpKUuPGjSVJJUuW1Pnz5yVJ9913n7755hvPVgcAAAAAPsDt4FSlShWdOHFCklSrVi19//33kqQtW7YoMDDQs9UBAAAAgA9wOzjdf//9WrVqlSTpn//8p0aNGqU6deqof//+evjhhz1eIAAAAAB4m9tP1Xv99ded/9+rVy9Vr15dGzZsUJ06ddS5c2ePFgcAAAAAvsDt4PRnt912m2677TZP1AIAAAAAPsntS/VsNpvuuuuuXH+vKTk5WTabzWOFAQAAAICvcDs4GYahjIwMRUVFaefOnbnGAQAAAEBR43Zwslgs+vzzz9W5c2e1bt1aS5YscRkHAAAAAEXNdZ1xstlsmjJlit566y316tVL//73vznbBAAAAKDIKtDDIYYMGaI6deqoR48eWrNmjadqAgAAAACf4vYZp+rVq7s8BOKuu+7Sjz/+qCNHjni0MAAAAADwFW6fcTpw4ECuYbVr19b27duVnJzskaIAAAAAwJdc96V6mZmZOnnypBwOh3MYD4cAAAAAUBS5HZz27NmjRx55RBs2bHAZbhiGLBaL7Ha7x4oDAAAAAF/gdnAaNGiQ/Pz89PXXX6tSpUqcZQIAAABQ5LkdnBITE7Vt2zbVr1//RtQDAAAAAD7H7afqNWzYUKdPn/ZoEdOmTVONGjUUFBSkVq1aafPmzfma79NPP5XFYlG3bt08Wg8AAAAAXMnt4DRx4kSNGDFC8fHxOnPmjFJSUlxe7lqwYIFiY2M1ZswYJSQkqEmTJoqJidHJkyevOd/Bgwf17LPPqk2bNm6vEwAAAADc4XZwio6O1o8//qi7775b4eHhKlOmjMqUKaPSpUurTJkybhcwefJkDR48WIMGDVLDhg01ffp0lShRQh9++OFV57Hb7erbt6/Gjh2rm266ye11AgAAAIA73L7HafXq1R5beWZmprZt26aRI0c6h1mtVkVHR2vjxo1Xne/VV19VeHi4HnnkEa1du/aa68jIyFBGRobzfc5ZsezsbGVnZxfwExRczuPc/W0WGVbDy9X4jgCbVQEBAfK3WeRfiNslZ13+VkMOH2wOb20Xb8pvmzhsFgUEBMjhcPhE3/YVDofDo/uMr/cRdxSV/uTpNqEvFVzOE4btdjsP0fIB3mwPTx+DiwqL7XI7+MJxxp31ux2c2rZte9Vxv/zyi1vLOn36tOx2uypWrOgyvGLFivrtt9/ynGfdunX64IMPlJiYmK91TJgwQWPHjs01fOvWrQoJCXGr3hshJ8gNaRku+TtMpi4+7FUbKStqlAIiwmUNKLztYrVcPqg9XNchh+F7/9h5a7t4U37bxHFTuDJrjtLp06e1adOmwirP5124cEGjRnlun/H1PuKOotKfPN0m9KWCy/lRdMuWLbJa3b64Bx7mzfbw9DG4yMgKlySdOXPG68eZ1NTUfE973X8AN8eFCxc0f/58zZw5U9u2bbuhf8fpwoUL6tevn2bMmKHy5cvna56RI0cqNjbW+T4lJUVVq1ZVVFSUwsLCblSp+ZaQkKATJ07o/c0nZZSr6e1yfEbqrzt15rspqvjQmwqsWHiXYwbaDI2PcujDPVZl2H3vS6G3tos35bdNMpJPKvmTcVq/fr2aNm1aeAX6uMTERI0bN85j+4yv9xF3FJX+5Ok2oS8VXHZ2tpYvX65bb71Vfn4F/qqFAvJme3j6GFxUWM6c1Jv3VlO5cuXUvHlzr9bizjMarnvvWbNmjT744AN9/vnnqly5srp3765p06a5tYzy5cvLZrMpOTnZZXhycrIiIiJyTf/777/r4MGD6ty5s3NYzq8Ifn5+2r17t2rVquUyT2BgoAIDA3Mty8/PzycOZjm/fGTZDRmOv/aXEE/KtDuUmZmpLLshayFuF+v/X1WWw6IsH2wPb20Xb8pvm2TZDWVmZspqtfpE3/YVVqvVo/uMr/cRdxSV/uTpNqEvFZxhXD4LaLPZ2IY+wJvt4eljcFFhsV9uE184zrizfrcqTUpK0uzZs/XBBx8oJSVFPXv2VEZGhhYvXqyGDRu6XWhAQIBatGihVatWOR8p7nA4tGrVKg0dOjTX9PXr19eOHTtchr388su6cOGCpkyZoqpVq7pdAwAAAACYyXdw6ty5s9asWaNOnTopLi5OHTt2lM1m0/Tp0wtUQGxsrAYMGKCoqCi1bNlScXFxSk1N1aBBgyRJ/fv3V2RkpCZMmKCgoCDdfPPNLvOXLl1aknINBwAAAABPyXdw+u677/T000/riSeeUJ06dTxWQK9evXTq1CmNHj1aSUlJatq0qZYtW+Z8YMThw4e5sRIAAACAV+U7OOU8za5FixZq0KCB+vXrpwcffNAjRQwdOjTPS/MkKT4+/przzp492yM1AAAAAMDV5PtUzm233aYZM2boxIkTeuyxx/Tpp5+qcuXKcjgcWrFihS5cuHAj6wQAAAAAr3H7GriQkBA9/PDDWrdunXbs2KF//etfev311xUeHq4uXbrciBoBAAAAwKsKdPNQvXr19MYbb+jo0aOaP3++p2oCAAAAAJ/ikacu2Gw2devWTUuXLvXE4gAAAADAp/C4OgAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAw4RPBadq0aapRo4aCgoLUqlUrbd68+arTzpgxQ23atFGZMmVUpkwZRUdHX3N6AAAAACgorwenBQsWKDY2VmPGjFFCQoKaNGmimJgYnTx5Ms/p4+Pj1bt3b61evVobN25U1apV1aFDBx07dqyQKwcAAABQXHg9OE2ePFmDBw/WoEGD1LBhQ02fPl0lSpTQhx9+mOf0c+fO1ZNPPqmmTZuqfv36mjlzphwOh1atWlXIlQMAAAAoLvy8ufLMzExt27ZNI0eOdA6zWq2Kjo7Wxo0b87WMtLQ0ZWVlqWzZsnmOz8jIUEZGhvN9SkqKJCk7O1vZ2dkFqN4zHA6HJMnfZpFhNbxcje8IsFkVEBAgf5tF/oW4XXLW5W815PDB5vDWdvGm/LaJw2ZRQECAHA6HT/RtX+FwODy6z/h6H3FHUelPnm4T+lLB2e12538tFouXq4E328PTx+CiwmK73A6+cJxxZ/0WwzC81orHjx9XZGSkNmzYoNatWzuHjxgxQj/88IM2bdpkuownn3xSy5cv186dOxUUFJRr/CuvvKKxY8fmGr58+XKFhIQU7AN4QEpKijIzM7X3dLrkH+ztcnyGPfUPZZ05ooCI2rIGlCi09VothmqFSb+nSA7D9/6x89Z28ab8tokjM02ZSfsUFRWl0NDQQqzQt124cEFbt2712D7j633EHUWlP3m6TehLBedwOHT27FmVLVtWVqvXL+4p9rzZHp4+BhcZWZdUp3yQAgICFBYW5tVSUlNTFRMTo/Pnz5vW4tUzTgX1+uuv69NPP1V8fHyeoUmSRo4cqdjYWOf7lJQUVa1aVVFRUV5vKElKSEjQiRMn9P7mkzLK1fR2OT4j9dedOvPdFFV86E0FVryp0NYbaDM0PsqhD/dYlWH3vS+F3tou3pTfNslIPqnkT8Zp/fr1atq0aeEV6OMSExM1btw4j+0zvt5H3FFU+pOn24S+VHDZ2dlavny5br31Vvn5/aW/ahUJ3mwPTx+DiwrLmZN6895qKleunJo3b+7VWnKuRssPr/bm8uXLy2azKTk52WV4cnKyIiIirjnvW2+9pddff10rV67ULbfcctXpAgMDFRgYmGu4n5+fTxzMcn75yLIbMhx/7S8hnpRpdygzM1NZdkPWQtwu1v+/qiyHRVk+2B7e2i7elN82ybIbyszMlNVq9Ym+7SusVqtH9xlf7yPuKCr9ydNtQl8quJyLeWw2G9vQB3izPTx9DC4qLPbLbeILxxl31u/V88cBAQFq0aKFy4Mdch70cOWle3/2xhtvaNy4cVq2bJmioqIKo1QAAAAAxZjXfwaJjY3VgAEDFBUVpZYtWyouLk6pqakaNGiQJKl///6KjIzUhAkTJEkTJ07U6NGjNW/ePNWoUUNJSUmSpJIlS6pkyZJe+xwAAAAAii6vB6devXrp1KlTGj16tJKSktS0aVMtW7ZMFStWlCQdPnzY5Ua+9957T5mZmfrHP/7hspwxY8bolVdeKczSAQAAABQTXg9OkjR06FANHTo0z3Hx8fEu7w8ePHjjCwIAAACAK/CMTAAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAwQXACAAAAABMEJwAAAAAw4RPBadq0aapRo4aCgoLUqlUrbd68+ZrTf/bZZ6pfv76CgoLUuHFjffvtt4VUKQAAAIDiyOvBacGCBYqNjdWYMWOUkJCgJk2aKCYmRidPnsxz+g0bNqh379565JFHtH37dnXr1k3dunXTL7/8UsiVAwAAACguvB6cJk+erMGDB2vQoEFq2LChpk+frhIlSujDDz/Mc/opU6aoY8eOeu6559SgQQONGzdOzZs319SpUwu5cgAAAADFhZ83V56Zmalt27Zp5MiRzmFWq1XR0dHauHFjnvNs3LhRsbGxLsNiYmK0ePHiPKfPyMhQRkaG8/358+clSWfPnlV2dnYBP0HBpaSkKC0tTY7TB2XPSPd2Ob7j/HH5+/vLOLVf2fYM8+k9xOYnpaVVVfbxI/KB3SM3L20Xb8pvmxhnj8nf31/btm1TSkpK4RXo4/bu3evRfcbn+4g7ikh/8nSb0JeuzWq1yuFwXHMah8OhtLQ0rV27Vlar13+jLhT52S7e4s328PQxuKiwXUhSWloFpaSk6OzZs16tJec4ZxiG+cSGFx07dsyQZGzYsMFl+HPPPWe0bNkyz3n8/f2NefPmuQybNm2aER4enuf0Y8aMMSTx4sWLFy9evHjx4sWLV56vI0eOmGYXr55xKgwjR450OUPlcDh09uxZlStXThaLxYuVXZaSkqKqVavqyJEjCgsL83Y5xR7t4XtoE99Ce/ge2sT30Ca+hfbwPb7UJoZh6MKFC6pcubLptF4NTuXLl5fNZlNycrLL8OTkZEVEROQ5T0REhFvTBwYGKjAw0GVY6dKlr7/oGyQsLMzrOw7+D+3he2gT30J7+B7axPfQJr6F9vA9vtImpUqVytd0Xr3wNiAgQC1atNCqVaucwxwOh1atWqXWrVvnOU/r1q1dppekFStWXHV6AAAAACgor1+qFxsbqwEDBigqKkotW7ZUXFycUlNTNWjQIElS//79FRkZqQkTJkiShg0bprZt22rSpEnq1KmTPv30U23dulXvv/++Nz8GAAAAgCLM68GpV69eOnXqlEaPHq2kpCQ1bdpUy5YtU8WKFSVJhw8fdnkCyu2336558+bp5Zdf1osvvqg6depo8eLFuvnmm731EQokMDBQY8aMyXU5IbyD9vA9tIlvoT18D23ie2gT30J7+J6/aptYDCM/z94DAAAAgOKrePxxAQAAAAAoAIITAAAAAJggOAEAAACACYITAAAAAJggOBUCu92uUaNGqWbNmgoODlatWrU0btw4XflcjosXL2ro0KGqUqWKgoOD1bBhQ02fPt2LVRdd+WmP5ORkDRw4UJUrV1aJEiXUsWNH7d2714tVF30XLlzQ8OHDVb16dQUHB+v222/Xli1bnOMNw9Do0aNVqVIlBQcHKzo6mja5gcza44svvlCHDh1Urlw5WSwWJSYmeq/YYuJabZKVlaXnn39ejRs3VkhIiCpXrqz+/fvr+PHjXq66aDPrJ6+88orq16+vkJAQlSlTRtHR0dq0aZMXKy7azNrjSo8//rgsFovi4uIKt8hixqxNBg4cKIvF4vLq2LGjFyu+NoJTIZg4caLee+89TZ06Vbt27dLEiRP1xhtv6D//+Y9zmtjYWC1btkyffPKJdu3apeHDh2vo0KFaunSpFysvmszawzAMdevWTfv379eSJUu0fft2Va9eXdHR0UpNTfVy9UXXo48+qhUrVujjjz/Wjh071KFDB0VHR+vYsWOSpDfeeEPvvPOOpk+frk2bNikkJEQxMTFKT0/3cuVFk1l7pKam6m9/+5smTpzo5UqLj2u1SVpamhISEjRq1CglJCToiy++0O7du9WlSxdvl12kmfWTunXraurUqdqxY4fWrVunGjVqqEOHDjp16pSXKy+azNojx5dffqkff/xRlStX9lKlxUd+2qRjx446ceKE8zV//nwvVmzCwA3XqVMn4+GHH3YZ1r17d6Nv377O940aNTJeffVVl2maN29uvPTSS4VSY3Fi1h67d+82JBm//PKLc7zdbjcqVKhgzJgxo1BrLS7S0tIMm81mfP311y7Dc/qAw+EwIiIijDfffNM57ty5c0ZgYKAxf/78wi63yDNrjysdOHDAkGRs3769ECssftxpkxybN282JBmHDh0qjBKLnetpk/PnzxuSjJUrVxZGicVKftvj6NGjRmRkpPHLL78Y1atXN95+++1CrrT4yE+bDBgwwOjatasXqrs+nHEqBLfffrtWrVqlPXv2SJJ++uknrVu3Tvfcc4/LNEuXLtWxY8dkGIZWr16tPXv2qEOHDt4qu8gya4+MjAxJUlBQkHMeq9WqwMBArVu3rvALLgays7Nlt9tdtrkkBQcHa926dTpw4ICSkpIUHR3tHFeqVCm1atVKGzduLOxyizyz9kDhu542OX/+vCwWi0qXLl0IFRY/7rZJZmam3n//fZUqVUpNmjQprDKLjfy0h8PhUL9+/fTcc8+pUaNG3iizWMlvH4mPj1d4eLjq1aunJ554QmfOnCnsUvPP28mtOLDb7cbzzz9vWCwWw8/Pz7BYLMZrr73mMk16errRv39/Q5Lh5+dnBAQEGHPmzPFSxUWbWXtkZmYa1apVM3r06GGcPXvWyMjIMF5//XVDktGhQwcvVl60tW7d2mjbtq1x7NgxIzs72/j4448Nq9Vq1K1b11i/fr0hyTh+/LjLPD169DB69uzppYqLtmu1x5U441R48tsmhmEYly5dMpo3b2706dPHC5UWH/lpk6+++soICQkxLBaLUblyZWPz5s1erLhoM2uP1157zWjfvr3hcDgMwzA441QIzNpk/vz5xpIlS4yff/7Z+PLLL40GDRoYt956q5Gdne3lyvPGGadCsHDhQs2dO1fz5s1TQkKC5syZo7feektz5sxxTvOf//xHP/74o5YuXapt27Zp0qRJeuqpp7Ry5UovVl40mbWHv7+/vvjiC+3Zs0dly5ZViRIltHr1at1zzz2yWukyN8rHH38swzAUGRmpwMBAvfPOO+rduzfb3EtoD9+T3zbJyspSz549ZRiG3nvvPS9VWzzkp03uuusuJSYmasOGDerYsaN69uypkydPerHqouta7bFt2zZNmTJFs2fPlsVi8XapxYZZH3nw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vUqWLKmOHTu6nFlatWqVdu/erRUrVujrr7/WF198oSpVqujVV191niFzx+rVq/X7779r9erVmjNnjmbPnq3Zs2c7x/fv31/Hjx9XfHy8Pv/8c73//vs6efLkdW5JACi+/LxdAADAO/bu3SvDMNSgQYM8xzdo0EB//PGHTp06pUaNGqlJkyaaN2+eRo0aJelyUGrVqpVq164tSRozZowmTZqk7t27S5Jq1qypX3/9Vf/97381YMAA53KHDx/unCbHs88+6/z/f/7zn1q+fLkWLlyoli1bXvfn27Fjh0qWLClJSktLU2hoqBYsWKCwsDBJ0rp167R582adPHlSgYGBkqS33npLixcv1qJFizRkyBC1a9dO8fHxevbZZxUfH6/27dvrt99+07p169SxY0fFx8drxIgRkqQFCxbI4XBo5syZzrNGOWEtPj5eHTp0kCSFhIRo5syZCggIcNZqs9kUGhqqiIgItz9nmTJlNHXqVNlsNtWvX1+dOnXSqlWrNHjwYP32229auXKltmzZoqioKEmXzwrWqVPnOrcqABRfBCcAKOYMw8jXdH379tWHH36oUaNGyTAMzZ8/X7GxsZKk1NRU/f7773rkkUc0ePBg5zzZ2dkqVaqUy3JyvsDnsNvteu2117Rw4UIdO3ZMmZmZysjIUIkSJQr0uerVq6elS5dKki5cuKAFCxaoR48eWr16taKiovTTTz/p4sWLKleunMt8ly5dcp5Za9u2rT744APZ7Xb98MMP6tChgyIiIhQfH69bbrlF+/btU7t27SRJP/30k/bt26fQ0FCX5aWnp7ucqWvcuLFLaCqoRo0ayWazOd9XqlRJO3bskCTt3r1bfn5+at68uXN87dq1VaZMGY+tHwCKC4ITABRTtWvXlsVi0a5du3T//ffnGr9r1y6VKVNGFSpUkCT17t1bzz//vBISEnTp0iUdOXJEvXr1kiTnpWszZszIdS/UlV/qpctnXK705ptvasqUKYqLi1Pjxo0VEhKi4cOHF/jBCQEBAc6zYZLUrFkzLV68WHFxcfrkk0908eJFVapUyXkp3pVKly4tSbrzzjt14cIFJSQkaM2aNXrttdcUERGh119/XU2aNFHlypWdZ28uXryoFi1aaO7cubmWl7MN8/r8V2O1WnOF2rwepuHv7+/y3mKxyOFw5GsdAID8IzgBQDFVrlw5tW/fXu+++66eeeYZl/uckpKSNHfuXPXv39952VmVKlXUtm1bzZ07V5cuXVL79u0VHh4uSapYsaIqV66s/fv3q2/fvm7VsX79enXt2lUPPfSQpMsPYdizZ48aNmzooU/6f2w2my5duiRJat68uZKSkuTn5+fywIUrlS5dWrfccoumTp0qf39/1a9fX+Hh4erVq5e+/vpr5/1NOctbsGCBwsPDnZcD5ldAQIDsdrvLsAoVKigpKUmGYTjbIDEx0a3l1qtXT9nZ2dq+fbtatGghSdq3b5/++OMPt5YDAODhEABQrE2dOlUZGRmKiYnRmjVrdOTIES1btkzt27dXZGSkxo8f7zJ937599emnn+qzzz7LFZDGjh2rCRMm6J133tGePXu0Y8cOzZo1S5MnT75mDXXq1NGKFSu0YcMG7dq1S4899piSk5ML/Nmys7OVlJSkpKQk7d27V//+97/166+/qmvXrpKk6OhotW7dWt26ddP333+vgwcPasOGDXrppZecT9KTLv/x3blz5zpDUtmyZdWgQQPn0wGv3Dbly5dX165dtXbtWh04cEDx8fF6+umndfTo0WvWWqNGDa1Zs0bHjh3T6dOnnes9deqU3njjDf3++++aNm2avvvuO7e2Qf369RUdHa0hQ4Zo8+bN2r59u4YMGaLg4GBnGAMA5A/BCQCKsTp16mjr1q266aab1LNnT9WqVUtDhgzRXXfdpY0bN6ps2bIu0//jH//QmTNnlJaWpm7durmMe/TRRzVz5kzNmjVLjRs3Vtu2bTV79mzVrFnzmjW8/PLLat68uWJiYtSuXTtFRETkWvb12LlzpypVqqRKlSqpadOmWrhwod577z31799f0uVL2r799lvdeeedGjRokOrWrasHH3xQhw4dUsWKFZ3Ladu2rex2u/NeJulyqPnzsBIlSmjNmjWqVq2aunfvrgYNGuiRRx5Renq66RmoV199VQcPHlStWrWcl/U1aNBA7777rqZNm6YmTZpo8+bNLg/RyK+PPvpIFStW1J133qn7779fgwcPVmhoqIKCgtxeFgAUZxYjv3cFAwCAv7yjR4+qatWqWrlype6++25vlwMAfxkEJwAAirD//e9/unjxoho3bqwTJ05oxIgROnbsmPbs2ZPrwRIAgKvj4RAAABRhWVlZevHFF7V//36Fhobq9ttv19y5cwlNAOAmzjgBAAAAgAkeDgEAAAAAJghOAAAAAGCC4AQAAAAAJghOAAAAAGCC4AQAAAAAJghOAAAAAGCC4AQAAAAAJghOAAAAAGDi/wE8OF+2l5kemQAAAABJRU5ErkJggg==\n"
+                },
+                "metadata": {}
+              }
+            ]
+          }
+        },
+        "9641a07133c04b44ad1cbdd637742f49": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "8e24d3e6bf1644a0891fec098b710b66": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "TabModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "TabModel",
+            "_titles": {
+              "0": "Spieler",
+              "1": "Simulation"
+            },
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "TabView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_ef8067a36dfe4ebba8f0916cea6a7861",
+              "IPY_MODEL_49fdbd930b204027b8a9c98f4f71869d"
+            ],
+            "layout": "IPY_MODEL_622387ca771940d1a5d9bb09e9bfe5b1",
+            "selected_index": 1
+          }
+        },
+        "ef8067a36dfe4ebba8f0916cea6a7861": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "VBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "VBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "VBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_8c80f966bfc340eeb3263919d875ab57",
+              "IPY_MODEL_6a0182a249604ff2bff0a62ecf62b2e2",
+              "IPY_MODEL_b6b9ecb3bdab4d60b7bcd1c2ec58ca4c",
+              "IPY_MODEL_66513101ad2a4ef1bac0e4af29631ad8",
+              "IPY_MODEL_6ec2cea4601240748c4ef0929448e35c",
+              "IPY_MODEL_52d59b6c271d4c4d96b57eacc5def8ff"
+            ],
+            "layout": "IPY_MODEL_e00a98b74f764bd4aa514e43ab5baa81"
+          }
+        },
+        "49fdbd930b204027b8a9c98f4f71869d": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "VBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "VBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "VBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_2ebc90b345c74bd78aa9a02f76db4bc6",
+              "IPY_MODEL_a8ff122c399a4c80abdc635e096d0691",
+              "IPY_MODEL_5593b9afb0f14f7bb6a52f944268c612"
+            ],
+            "layout": "IPY_MODEL_d18314da1b02463a98a1344ef317749f"
+          }
+        },
+        "622387ca771940d1a5d9bb09e9bfe5b1": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "8c80f966bfc340eeb3263919d875ab57": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_2c8a56f257fb4b03bc1365b6c9f7fe04",
+            "placeholder": "​",
+            "style": "IPY_MODEL_8d8489c4236640a0832d8e2c4a95de63",
+            "value": "Spielerliste filtern:"
+          }
+        },
+        "66513101ad2a4ef1bac0e4af29631ad8": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_513e8e1b951d4cb6b116571d984cdc87",
+            "placeholder": "​",
+            "style": "IPY_MODEL_a6bb33c91b244acbb678d20ed07926c5",
+            "value": "\nSpieler-Overall-Verteilung:"
+          }
+        },
+        "e00a98b74f764bd4aa514e43ab5baa81": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "2ebc90b345c74bd78aa9a02f76db4bc6": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "LabelModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "LabelModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "LabelView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_0dd8ac9e79744660a6fc542d02dfa701",
+            "placeholder": "​",
+            "style": "IPY_MODEL_130fc6c416f34d55a50bf88950dff854",
+            "value": "Starte eine Spielsimulation:"
+          }
+        },
+        "d18314da1b02463a98a1344ef317749f": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "2c8a56f257fb4b03bc1365b6c9f7fe04": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "8d8489c4236640a0832d8e2c4a95de63": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "513e8e1b951d4cb6b116571d984cdc87": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "a6bb33c91b244acbb678d20ed07926c5": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "0dd8ac9e79744660a6fc542d02dfa701": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "130fc6c416f34d55a50bf88950dff854": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Daevid007/Daevid007/blob/main/FM2025\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "UFyBnErIGUdD"
+      },
+      "outputs": [],
+      "source": [
+        "import ipywidgets as widgets\n",
+        "from IPython.display import display, clear_output\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "import random\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Beispiel für Spielerdaten\n",
+        "players_data = [\n",
+        "    {\"name\": \"Lionel Messi\", \"overall\": 95, \"position\": \"ST\", \"team\": \"FC Barcelona\"},\n",
+        "    {\"name\": \"Cristiano Ronaldo\", \"overall\": 92, \"position\": \"ST\", \"team\": \"Real Madrid\"},\n",
+        "    {\"name\": \"Kevin De Bruyne\", \"overall\": 91, \"position\": \"CM\", \"team\": \"Manchester City\"},\n",
+        "    {\"name\": \"Robert Lewandowski\", \"overall\": 90, \"position\": \"ST\", \"team\": \"FC Bayern München\"},\n",
+        "    {\"name\": \"Virgil van Dijk\", \"overall\": 89, \"position\": \"CB\", \"team\": \"Liverpool FC\"},\n",
+        "    {\"name\": \"Neymar Jr.\", \"overall\": 88, \"position\": \"LW\", \"team\": \"Paris Saint-Germain\"},\n",
+        "]\n",
+        "\n",
+        "df_players = pd.DataFrame(players_data)"
+      ],
+      "metadata": {
+        "id": "7v4xJXXXGVtt"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dropdown für Team-Filter\n",
+        "team_options = ['All Teams'] + list(df_players['team'].unique())\n",
+        "team_selector = widgets.Dropdown(\n",
+        "    options=team_options,\n",
+        "    value='All Teams',\n",
+        "    description='Team:',\n",
+        "    disabled=False,\n",
+        ")\n",
+        "\n",
+        "# Output-Widget, um die Ergebnisse anzuzeigen\n",
+        "output_players = widgets.Output()\n",
+        "\n",
+        "def filter_players(change):\n",
+        "    with output_players:\n",
+        "        clear_output(wait=True)\n",
+        "        selected_team = change.new\n",
+        "        if selected_team == 'All Teams':\n",
+        "            display(df_players)\n",
+        "        else:\n",
+        "            display(df_players[df_players['team'] == selected_team])\n",
+        "\n",
+        "team_selector.observe(filter_players, names='value')\n",
+        "\n",
+        "print(\"Spielerliste:\")\n",
+        "display(team_selector, output_players)\n",
+        "\n",
+        "# Initialen Aufruf, um alle Spieler anzuzeigen\n",
+        "with output_players:\n",
+        "    display(df_players)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 287,
+          "referenced_widgets": [
+            "6a0182a249604ff2bff0a62ecf62b2e2",
+            "f190c4dfc8c04bada8bd176b3ceb99eb",
+            "1c3f8dfc24e248dea9b73d242e3bf1a5",
+            "b6b9ecb3bdab4d60b7bcd1c2ec58ca4c",
+            "06b18368a6e24f2baea263707ca8a384"
+          ]
+        },
+        "id": "gl-l4RaGGZKu",
+        "outputId": "483ca40f-fb42-417a-8871-baeab4d9fd3a"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Spielerliste:\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Dropdown(description='Team:', options=('All Teams', 'FC Barcelona', 'Real Madrid', 'Manchester City', 'FC Baye…"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "6a0182a249604ff2bff0a62ecf62b2e2"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Output()"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "b6b9ecb3bdab4d60b7bcd1c2ec58ca4c"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Teams für die Simulation (könnten auch über Widgets ausgewählt werden)\n",
+        "team_a = \"FC Bayern München\"\n",
+        "team_b = \"Borussia Dortmund\"\n",
+        "\n",
+        "# Button, um ein Spiel zu simulieren\n",
+        "simulate_button = widgets.Button(description=\"Spiel simulieren\")\n",
+        "game_output = widgets.Output()\n",
+        "\n",
+        "def simulate_game(b):\n",
+        "    with game_output:\n",
+        "        clear_output(wait=True)\n",
+        "        score_a = random.randint(0, 4)\n",
+        "        score_b = random.randint(0, 4)\n",
+        "        print(f\"Spiel zwischen {team_a} und {team_b}:\")\n",
+        "        print(f\"Ergebnis: {team_a} {score_a} - {score_b} {team_b}\")\n",
+        "        if score_a > score_b:\n",
+        "            print(f\"{team_a} hat gewonnen!\")\n",
+        "        elif score_b > score_a:\n",
+        "            print(f\"{team_b} hat gewonnen!\")\n",
+        "        else:\n",
+        "            print(\"Das Spiel endete unentschieden.\")\n",
+        "\n",
+        "simulate_button.on_click(simulate_game)\n",
+        "\n",
+        "print(\"\\nSpielsimulation:\")\n",
+        "display(simulate_button, game_output)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 136,
+          "referenced_widgets": [
+            "a8ff122c399a4c80abdc635e096d0691",
+            "6c03512a71f34185a11d1db5f0ebf0b2",
+            "812a6390ecd3420285c6308b8aa72597",
+            "5593b9afb0f14f7bb6a52f944268c612",
+            "b8192be52ac04650b82b01c8ee3d1b45"
+          ]
+        },
+        "id": "cG-VYathGcbz",
+        "outputId": "6fb0c06a-061e-42ec-f6f1-6a67f78b341a"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Spielsimulation:\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Button(description='Spiel simulieren', style=ButtonStyle())"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "a8ff122c399a4c80abdc635e096d0691"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Output()"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "5593b9afb0f14f7bb6a52f944268c612"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Slider, um die Mindest-Overall-Bewertung zu filtern\n",
+        "overall_slider = widgets.IntSlider(\n",
+        "    value=70,\n",
+        "    min=50,\n",
+        "    max=100,\n",
+        "    step=1,\n",
+        "    description='Min Overall:',\n",
+        "    continuous_update=True,\n",
+        ")\n",
+        "\n",
+        "# Output-Widget für den Plot\n",
+        "plot_output = widgets.Output()\n",
+        "\n",
+        "def update_plot(change):\n",
+        "    with plot_output:\n",
+        "        clear_output(wait=True)\n",
+        "        min_overall = change.new\n",
+        "        filtered_players = df_players[df_players['overall'] >= min_overall]\n",
+        "\n",
+        "        if not filtered_players.empty:\n",
+        "            plt.figure(figsize=(10, 6))\n",
+        "            filtered_players['overall'].hist(bins=10, edgecolor='black')\n",
+        "            plt.title(f'Verteilung der Spieler-Overall-Bewertungen (>= {min_overall})')\n",
+        "            plt.xlabel('Overall Bewertung')\n",
+        "            plt.ylabel('Anzahl der Spieler')\n",
+        "            plt.grid(axis='y', alpha=0.75)\n",
+        "            plt.show()\n",
+        "        else:\n",
+        "            print(\"Keine Spieler mit dieser Mindest-Overall-Bewertung gefunden.\")\n",
+        "\n",
+        "overall_slider.observe(update_plot, names='value')\n",
+        "\n",
+        "print(\"\\nSpielerstatistik-Visualisierung:\")\n",
+        "display(overall_slider, plot_output)\n",
+        "\n",
+        "# Initialen Plot erstellen\n",
+        "with plot_output:\n",
+        "    plt.figure(figsize=(10, 6))\n",
+        "    df_players['overall'].hist(bins=10, edgecolor='black')\n",
+        "    plt.title('Verteilung aller Spieler-Overall-Bewertungen')\n",
+        "    plt.xlabel('Overall Bewertung')\n",
+        "    plt.ylabel('Anzahl der Spieler')\n",
+        "    plt.grid(axis='y', alpha=0.75)\n",
+        "    plt.show()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 631,
+          "referenced_widgets": [
+            "6ec2cea4601240748c4ef0929448e35c",
+            "d85900eee3844b419b63a314a2ac8a47",
+            "d2dacb01f6db49038320673913afa669",
+            "52d59b6c271d4c4d96b57eacc5def8ff",
+            "9641a07133c04b44ad1cbdd637742f49"
+          ]
+        },
+        "id": "UqiLeORHGjyr",
+        "outputId": "d2d4f1a8-1f0d-49cd-9b96-3c3f777bbc79"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Spielerstatistik-Visualisierung:\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "IntSlider(value=70, description='Min Overall:', min=50)"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "6ec2cea4601240748c4ef0929448e35c"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Output()"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "52d59b6c271d4c4d96b57eacc5def8ff"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Beispiel: Layout für Spieler-Management\n",
+        "player_management_tab = widgets.VBox([\n",
+        "    widgets.Label(\"Spielerliste filtern:\"),\n",
+        "    team_selector,\n",
+        "    output_players,\n",
+        "    widgets.Label(\"\\nSpieler-Overall-Verteilung:\"),\n",
+        "    overall_slider,\n",
+        "    plot_output\n",
+        "])\n",
+        "\n",
+        "# Beispiel: Layout für Spielsimulation\n",
+        "game_simulation_tab = widgets.VBox([\n",
+        "    widgets.Label(\"Starte eine Spielsimulation:\"),\n",
+        "    simulate_button,\n",
+        "    game_output\n",
+        "])\n",
+        "\n",
+        "# Tabs für verschiedene Bereiche des Spiels\n",
+        "tab_widget = widgets.Tab()\n",
+        "tab_widget.children = [player_management_tab, game_simulation_tab]\n",
+        "tab_widget.set_title(0, 'Spieler')\n",
+        "tab_widget.set_title(1, 'Simulation')\n",
+        "\n",
+        "print(\"\\nDein Football Manager Dashboard:\")\n",
+        "display(tab_widget)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 230,
+          "referenced_widgets": [
+            "8e24d3e6bf1644a0891fec098b710b66",
+            "ef8067a36dfe4ebba8f0916cea6a7861",
+            "49fdbd930b204027b8a9c98f4f71869d",
+            "622387ca771940d1a5d9bb09e9bfe5b1",
+            "8c80f966bfc340eeb3263919d875ab57",
+            "6a0182a249604ff2bff0a62ecf62b2e2",
+            "b6b9ecb3bdab4d60b7bcd1c2ec58ca4c",
+            "66513101ad2a4ef1bac0e4af29631ad8",
+            "6ec2cea4601240748c4ef0929448e35c",
+            "52d59b6c271d4c4d96b57eacc5def8ff",
+            "e00a98b74f764bd4aa514e43ab5baa81",
+            "2ebc90b345c74bd78aa9a02f76db4bc6",
+            "a8ff122c399a4c80abdc635e096d0691",
+            "5593b9afb0f14f7bb6a52f944268c612",
+            "d18314da1b02463a98a1344ef317749f",
+            "2c8a56f257fb4b03bc1365b6c9f7fe04",
+            "8d8489c4236640a0832d8e2c4a95de63",
+            "f190c4dfc8c04bada8bd176b3ceb99eb",
+            "1c3f8dfc24e248dea9b73d242e3bf1a5",
+            "513e8e1b951d4cb6b116571d984cdc87",
+            "a6bb33c91b244acbb678d20ed07926c5",
+            "d85900eee3844b419b63a314a2ac8a47",
+            "d2dacb01f6db49038320673913afa669",
+            "0dd8ac9e79744660a6fc542d02dfa701",
+            "130fc6c416f34d55a50bf88950dff854",
+            "6c03512a71f34185a11d1db5f0ebf0b2",
+            "812a6390ecd3420285c6308b8aa72597",
+            "06b18368a6e24f2baea263707ca8a384",
+            "9641a07133c04b44ad1cbdd637742f49",
+            "b8192be52ac04650b82b01c8ee3d1b45"
+          ]
+        },
+        "id": "Vj7LMBnOGqjd",
+        "outputId": "bf0bba76-456b-4c30-9c9c-47f42d7174c0"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Dein Football Manager Dashboard:\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Tab(children=(VBox(children=(Label(value='Spielerliste filtern:'), Dropdown(description='Team:', options=('All…"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "8e24d3e6bf1644a0891fec098b710b66"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
